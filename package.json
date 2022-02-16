@@ -10,7 +10,8 @@
     "eslint": "npx eslint --ext .tsx",
     "prettier": "prettier --write .",
     "husky": "husky install",
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "cypress": "cypress open"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.12.0",
