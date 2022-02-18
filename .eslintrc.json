@@ -1,11 +1,12 @@
 {
-  "plugins": ["@typescript-eslint", "jsx-a11y", "cypress", "jest"],
+  "plugins": ["@typescript-eslint", "jsx-a11y", "cypress", "jest", "cucumber"],
   "extends": [
     "next/core-web-vitals",
     "plugin:@typescript-eslint/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:cypress/recommended",
     "plugin:jest/recommended",
+    "cucumber/recommended",
     "prettier"
   ],
   "rules": {
@@ -18,5 +19,8 @@
         "assertFunctionNames": ["expect", "cy"]
       }
     ]
+  },
+  "env": {
+    "cypress/globals": true
   }
 }
