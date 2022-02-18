@@ -6,7 +6,6 @@
     "plugin:jsx-a11y/recommended",
     "plugin:cypress/recommended",
     "plugin:jest/recommended",
-    "cucumber/recommended",
     "prettier"
   ],
   "rules": {
@@ -18,7 +17,11 @@
       {
         "assertFunctionNames": ["expect", "cy"]
       }
-    ]
+    ],
+    "cucumber/async-then": 2,
+    "cucumber/expression-type": 2,
+    "cucumber/no-restricted-tags": [2, "wip", "broken", "foo"],
+    "cucumber/no-arrow-functions": 2
   },
   "env": {
     "cypress/globals": true
