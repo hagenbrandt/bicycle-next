@@ -33,12 +33,17 @@
     "@types/node": "17.0.18",
     "@types/react": "17.0.39",
     "cypress": "^9.5.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
     "eslint": "8.9.0",
     "eslint-config-next": "12.0.10",
+    "eslint-plugin-cucumber": "^1.4.0",
     "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "jest": "^27.5.1",
     "start-server-and-test": "^1.14.0",
     "typescript": "4.5.5"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }
