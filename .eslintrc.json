@@ -25,5 +25,6 @@
   },
   "env": {
     "cypress/globals": true
-  }
+  },
+  "ignorePatterns": ["cypress/integration/common/*.ts"]
 }
