@@ -1,5 +1,5 @@
 {
-  "plugins": ["@typescript-eslint", "jsx-a11y", "cypress", "jest"],
+  "plugins": ["@typescript-eslint", "jsx-a11y", "cypress", "jest", "cucumber"],
   "extends": [
     "next/core-web-vitals",
     "plugin:@typescript-eslint/recommended",
@@ -11,6 +11,20 @@
   "rules": {
     "prefer-const": "error",
     "@typescript-eslint/no-unused-vars": "error",
-    "@typescript-eslint/no-explicit-any": "error"
-  }
+    "@typescript-eslint/no-explicit-any": "error",
+    "jest/expect-expect": [
+      "error",
+      {
+        "assertFunctionNames": ["expect", "cy"]
+      }
+    ],
+    "cucumber/async-then": 2,
+    "cucumber/expression-type": 2,
+    "cucumber/no-restricted-tags": [2, "wip", "broken", "foo"],
+    "cucumber/no-arrow-functions": 2
+  },
+  "env": {
+    "cypress/globals": true
+  },
+  "ignorePatterns": ["cypress/integration/common/*.ts"]
 }
