@@ -9,9 +9,15 @@
     "tsc": "tsc --noEmit",
     "eslint": "npx eslint --ext .tsx",
     "prettier": "prettier --write .",
-    "husky": "husky install"
+    "husky": "husky install",
+    "test": "jest --watch",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run --headless",
+    "cypress": "start-server-and-test dev http://localhost:3000 cypress:open",
+    "cypress:ci": "start-server-and-test dev http://localhost:3000 cypress:run"
   },
   "dependencies": {
+    "@cypress/browserify-preprocessor": "^3.0.2",
     "@typescript-eslint/eslint-plugin": "^5.12.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-jest": "^26.1.0",
@@ -23,12 +29,22 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.2",
     "@types/node": "17.0.18",
     "@types/react": "17.0.39",
+    "cypress": "^9.5.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
     "eslint": "8.9.0",
     "eslint-config-next": "12.0.10",
+    "eslint-plugin-cucumber": "^1.4.0",
     "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-jsx-a11y": "^6.5.1",
+    "jest": "^27.5.1",
+    "start-server-and-test": "^1.14.0",
     "typescript": "4.5.5"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }

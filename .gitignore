@@ -7,6 +7,8 @@
 
 # testing
 /coverage
+cypress/videos
+cypress/screenshots
 
 # next.js
 /.next/
@@ -38,3 +40,6 @@ yarn-error.log*
 
 # vscode
 .vscode
+
+# intelliJ
+.idea
