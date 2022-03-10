@@ -14,7 +14,9 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run --headless",
     "cypress": "start-server-and-test dev http://localhost:3000 cypress:open",
-    "cypress:ci": "start-server-and-test dev http://localhost:3000 cypress:run"
+    "cypress:ci": "start-server-and-test dev http://localhost:3000 cypress:run",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@cypress/browserify-preprocessor": "^3.0.2",
@@ -29,10 +31,21 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-interactions": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/builder-webpack5": "^6.4.19",
+    "@storybook/manager-webpack5": "^6.4.19",
+    "@storybook/react": "^6.4.19",
+    "@storybook/testing-library": "0.0.9",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
     "@types/node": "17.0.18",
     "@types/react": "17.0.39",
+    "babel-loader": "^8.2.3",
+    "core-js": "^3.21.1",
     "cypress": "^9.5.0",
     "cypress-cucumber-preprocessor": "^4.3.1",
     "eslint": "8.9.0",
@@ -42,7 +55,8 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "jest": "^27.5.1",
     "start-server-and-test": "^1.14.0",
-    "typescript": "4.5.5"
+    "typescript": "4.5.5",
+    "webpack": "^5.70.0"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
