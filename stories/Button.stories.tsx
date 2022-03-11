@@ -1,5 +1,6 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
+import { BADGE } from '@geometricpanda/storybook-addon-badges'
 
 import { Button } from './Button'
 
@@ -10,6 +11,9 @@ export default {
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     backgroundColor: { control: 'color' },
+  },
+  parameters: {
+    badges: [BADGE.DEFAULT],
   },
 } as ComponentMeta<typeof Button>
 

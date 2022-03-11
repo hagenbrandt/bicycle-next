@@ -10,6 +10,7 @@ module.exports = {
     '@storybook/addon-a11y',
     '@storybook/addon-storysource',
     '@washingtonpost/storybook-addon-web-vitals',
+    '@geometricpanda/storybook-addon-badges',
   ],
   framework: '@storybook/react',
   core: {

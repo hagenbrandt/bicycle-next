@@ -1,5 +1,6 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
+import { BADGE } from '@geometricpanda/storybook-addon-badges'
 
 import { Header } from './Header'
 
@@ -9,6 +10,7 @@ export default {
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
     layout: 'fullscreen',
+    badges: [BADGE.DEFAULT],
   },
 } as ComponentMeta<typeof Header>
 
