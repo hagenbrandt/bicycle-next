@@ -12,6 +12,7 @@ module.exports = {
     '@washingtonpost/storybook-addon-web-vitals',
     '@geometricpanda/storybook-addon-badges',
     '@whitespace/storybook-addon-html',
+    '@storybook/addon-jest',
   ],
   framework: '@storybook/react',
   core: {

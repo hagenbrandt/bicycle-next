@@ -18,6 +18,10 @@ const Template: ComponentStory<typeof Page> = (args) => <Page {...args} />
 
 export const LoggedOut = Template.bind({})
 
+LoggedOut.parameters = {
+  jest: 'storybook-page.test.tsx',
+}
+
 export const LoggedIn = Template.bind({})
 
 // More on interaction testing: https://storybook.js.org/docs/react/writing-tests/interaction-testing

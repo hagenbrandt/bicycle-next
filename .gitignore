@@ -9,6 +9,7 @@
 /coverage
 cypress/videos
 cypress/screenshots
+.jest-test-results.json
 
 # next.js
 /.next/
