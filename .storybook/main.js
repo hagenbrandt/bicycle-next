@@ -9,6 +9,7 @@ module.exports = {
     '@storybook/addon-interactions',
     '@storybook/addon-a11y',
     '@storybook/addon-storysource',
+    '@washingtonpost/storybook-addon-web-vitals',
   ],
   framework: '@storybook/react',
   core: {
