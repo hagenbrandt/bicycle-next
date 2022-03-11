@@ -11,6 +11,7 @@ module.exports = {
     '@storybook/addon-storysource',
     '@washingtonpost/storybook-addon-web-vitals',
     '@geometricpanda/storybook-addon-badges',
+    '@whitespace/storybook-addon-html',
   ],
   framework: '@storybook/react',
   core: {
