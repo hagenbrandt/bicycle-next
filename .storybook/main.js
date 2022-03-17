@@ -14,6 +14,9 @@ module.exports = {
     '@whitespace/storybook-addon-html',
     '@storybook/addon-jest',
     'storybook-mobile',
+    '@storybook/addon-knobs/register',
+    'storybook-addon-playwright/preset',
+    'storybook-addon-playwright/register',
   ],
   framework: '@storybook/react',
   core: {
