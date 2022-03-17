@@ -13,6 +13,7 @@ module.exports = {
     '@geometricpanda/storybook-addon-badges',
     '@whitespace/storybook-addon-html',
     '@storybook/addon-jest',
+    'storybook-mobile',
   ],
   framework: '@storybook/react',
   core: {
