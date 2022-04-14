@@ -6,6 +6,7 @@
     "plugin:jsx-a11y/recommended",
     "plugin:cypress/recommended",
     "plugin:jest/recommended",
+    "plugin:storybook/recommended",
     "prettier"
   ],
   "rules": {
