@@ -8,5 +8,6 @@ export default defineConfig({
     video: false,
     testFiles: ['**/*.spec.ts', '**/*.feature'],
     ignoreTestFiles: ['**/__snapshots__/*', '**/__image_snapshots__/*'],
+    projectId: '1p1k1v',
   },
 })
