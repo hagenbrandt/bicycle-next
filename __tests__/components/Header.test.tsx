@@ -15,4 +15,10 @@ describe('header', () => {
       cleanup()
     })
   })
+
+  it('returns empty DOM element when no text is given', () => {
+    const { container } = render(<Header headerText="" headerType="h1" />)
+
+    expect(container).toBeEmptyDOMElement()
+  })
 })
