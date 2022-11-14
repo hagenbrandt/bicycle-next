@@ -1,0 +1,9 @@
+.elasticbeanstalk
+.jest-test-results.json
+.next
+.vscode
+cypress.config.ts
+next-env.d.ts
+out
+package-lock.json
+storybook-static
