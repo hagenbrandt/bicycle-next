@@ -21,4 +21,12 @@ describe('header', () => {
 
     expect(container).toBeEmptyDOMElement()
   })
+
+  it('returns empty DOM element when no headline type is given', () => {
+    const { container } = render(
+      <Header headerText="" headerType={'' as Headline} />
+    )
+
+    expect(container).toBeEmptyDOMElement()
+  })
 })
