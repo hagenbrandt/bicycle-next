@@ -2,10 +2,10 @@ import { render, screen, cleanup } from '@testing-library/react'
 import Header, { Headline } from '../../components/header/Header'
 
 describe('header', () => {
-  it('renders given headline tag with given text', () => {
-    const headlineTypes: Headline[] = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']
-    const headlineText = 'This is a headline'
+  const headlineTypes: Headline[] = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']
+  const headlineText = 'This is a headline'
 
+  it('renders given headline tag with given text', () => {
     headlineTypes.forEach((item) => {
       render(<Header headerText={headlineText} headerType={item} />)
 
@@ -28,5 +28,13 @@ describe('header', () => {
     )
 
     expect(container).toBeEmptyDOMElement()
+  })
+
+  it('makes snapshot test', () => {
+    const { container } = render(
+      <Header headerText={headlineText} headerType={'h1'} />
+    )
+
+    expect(container).toMatchSnapshot()
   })
 })
