@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { cleanup, render, screen } from '@testing-library/react'
 import Navigation, { LinkParams } from '../../components/navigation/Navigation'
 
 describe('Navigation', () => {
@@ -36,6 +36,12 @@ describe('Navigation', () => {
       )
     })
   })
-  it.todo('returns empty DOM element when no links are given')
+  it('returns empty DOM element when no links are given', () => {
+    cleanup()
+    const { container } = render(<Navigation links={[]} />)
+
+    expect(container).toBeEmptyDOMElement()
+  })
+
   it.todo('navigates to passed href url')
 })

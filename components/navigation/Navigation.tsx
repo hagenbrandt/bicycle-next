@@ -10,6 +10,10 @@ type NavigationProps = {
 }
 
 const Navigation = ({ links }: NavigationProps) => {
+  if (!links.length) {
+    return <></>
+  }
+
   return (
     <nav>
       {links.map((item, index) => {
