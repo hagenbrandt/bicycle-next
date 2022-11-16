@@ -13,6 +13,7 @@ const customJestConfig = {
     '<rootDir>/cypress/',
     'node_modules',
     'jest-test-results.json',
+    'testUtilities',
   ],
 }
 
